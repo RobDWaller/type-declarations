@@ -35,33 +35,17 @@ Then run the following commands.
 
 ```
 php public/index.php
-```
-
-You should then see the following output:
-
-```
+// Output
 string(3) "123"
 Return value of bar() must be of the type string, integer returned
-```
 
-```
 php public/no-strict-types.php
-```
-
-You should then see the following output:
-
-```
+// Output
 string(3) "123"
 Argument 1 passed to foo() must be of the type int, array given, called in /var/www/html/public/no-strict-types.php on line 31
-```
 
-```
 php public/with-strict-types.php
-```
-
-You should then see the following output:
-
-```
+// Output
 Argument 1 passed to foo() must be of the type int, string given, called in /var/www/html/public/with-strict-types.php on line 20
 ```
 
