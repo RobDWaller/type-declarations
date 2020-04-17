@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  php:
+    image: php:7.4
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    tty: true
+    environment:
+      - "USER=root"
+    ports:
+      - "8080:80"
