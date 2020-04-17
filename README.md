@@ -10,15 +10,29 @@ The project is made up of three files, `index.php`, `foo.php` and `bar.php`.
 
 By reviewing the codebase, starting with the `index.php` file, you will be able to see that it is possible to have strict types both on and off in the same application.
 
+## Setup
+
+To use this library simply spin up the contained Docker PHP environment.
+
+```
+docker-compose up -d
+```
+
 ## Usage
 
-You can run this project by setting it up as a standard website using Apache or Nginx. Alternatively you can run it on the command line by executing the following command:
+Shell into the Docker PHP environment.
+
+```
+docker-compose exec php bash
+```
+
+Then run the following command.
 
 ```
 php public/index.php
 ```
 
-Output:
+You should then see the following output:
 
 ```
 string(3) "123"
